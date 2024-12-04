@@ -90,6 +90,8 @@ public class AuthorizationServerConfig {
                 .clientSecret("secret")
                 .clientAuthenticationMethod(ClientAuthenticationMethod.CLIENT_SECRET_BASIC)
                 .authorizationGrantType(AuthorizationGrantType.AUTHORIZATION_CODE)
+                .authorizationGrantType(AuthorizationGrantType.CLIENT_CREDENTIALS)
+                .authorizationGrantType(AuthorizationGrantType.REFRESH_TOKEN)
                 .redirectUri("https://www.manning.com/authorized")
                 .scope(OidcScopes.OPENID)
                 //.clientSettings(ClientSettings.builder().requireProofKey(false).build())
