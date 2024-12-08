@@ -18,10 +18,10 @@ public class User {
 
     private String password;
 
-    @ManyToMany(fetch = FetchType.EAGER)
-    @JoinTable(name = "users_authorities",
-            joinColumns = @JoinColumn(name = "user_id"),
-            inverseJoinColumns = @JoinColumn(name = "authority_id")
-    )
-    private Set<Authority> authorities;
+//    @ManyToMany(fetch = FetchType.EAGER)
+//    @JoinTable(name = "users_authorities",
+//            joinColumns = @JoinColumn(name = "user_id"),
+//            inverseJoinColumns = @JoinColumn(name = "authority_id")
+//    )
+//    private Set<Authority> authorities;
 }
